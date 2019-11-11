@@ -1,5 +1,10 @@
 <template>
   <div class="home">
+    <div class="container">
+      <div class="row">
+        .col
+      </div>
+    </div>
     <h1>Home</h1>
   </div>
 </template>
