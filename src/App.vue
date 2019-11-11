@@ -16,13 +16,16 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import './sass/main';
 #app {
   font-family: 'Rajdhani', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #1f1f1f;
+  background-image: url('./assets/5-mid.jpg');
+  background-position: center;
+  background-size: cover;
   color: #fff;
-  padding-top: 8vh
+  padding-top: 7vh;
 }
 </style>

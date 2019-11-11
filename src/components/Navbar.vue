@@ -3,7 +3,7 @@
         <b-navbar toggleable="lg" variant="info" class="fixed-top">
             <b-navbar-brand @click="show = false">
                 <router-link class="brand" :to="{name: 'Home'}">
-                    Ahmed && ALi
+                    Ahmed Samir
                 </router-link>
             </b-navbar-brand>
 
@@ -32,7 +32,7 @@
                         <router-link :to="{name: 'Contact'}">Contact</router-link>
                     </li>
                 </ul>
-            </div>  
+            </div>
         </transition>
     </div>
 </template>
@@ -51,7 +51,7 @@ export default {
 <style lang="scss">
     .navbar {
         height: 7vh;
-        background: #1f1f1f !important;
+        background: rgba(0, 0, 0, 0.8) !important;
         a.brand {
             display: flex;
             align-items: center;
@@ -75,19 +75,19 @@ export default {
                 margin-bottom: .3rem;
                 transition: all .3s ease-in-out;
                 &:first-of-type {
-                    width: 1rem;
+                    width: 1.5rem;
                 }
                 &:nth-of-type(2) {
-                    width: 1.5rem
+                    width: 1rem
                 } 
                 &:last-of-type {
-                    width: 1.2rem;
+                    width: .5rem;
                     margin-bottom: 0;
                 }
             }
             &:hover {
                 span {
-                    width: 2rem
+                    width: 1.5rem
                 }
             }
         }
@@ -99,7 +99,7 @@ export default {
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        background-color: #1f1f1f;
+        background: rgba(0, 0, 0, 0.9) !important;
         position: fixed;
         top: 0;
         left: 0;
@@ -153,11 +153,14 @@ export default {
             }
         }
     }
-    .fade-enter-active, 
-    .fade-leave-active {
+    .fade-enter-active {
         transition: all .3s ease-in-out;
     }
     
+    .fade-leave-active {
+        transition: all .1s ease-in-out;
+    }
+
     .fade-enter, 
     .fade-leave-to {
         width: 0%;
