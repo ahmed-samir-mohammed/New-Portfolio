@@ -8,7 +8,7 @@
             </b-navbar-brand>
 
             <b-navbar-nav class="ml-auto">
-                <button @click="show = !show" class="menu-btn">
+                <button @click.esc="show = !show" class="menu-btn">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -126,7 +126,7 @@ export default {
                         transition: all .3s ease-in-out;
                         position: absolute;
                         left: 0;
-                        bottom: 0;
+                        bottom: -.6rem;
                     }
                     &:hover {
                         &::after {
@@ -158,13 +158,12 @@ export default {
     }
     
     .fade-leave-active {
-        transition: all .1s ease-in-out;
+        transition: all .5s ease-in-out;
     }
 
     .fade-enter, 
     .fade-leave-to {
         width: 0%;
-        opacity: 0;
         li {
             opacity: 0;
         }
